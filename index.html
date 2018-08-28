@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Madhav Paudel</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="icon" type="image/jpeg" href="images/prof.jpg" />
+</head>
+<body>
+<script>
+	let d = document;
+
+	d.querySelector("html").style.background = "url('images/background.jpg') no-repeat center center fixed";
+	d.querySelector("html").style.backgroundSize = "cover";
+
+	d.querySelector("body").style.background = "rgba(0,0,0,0.4)";
+	d.querySelector("body").style.maxWidth = "400px";
+	d.querySelector("body").style.maxHeight = "440px";
+	d.querySelector("body").style.padding = "40px";
+	d.querySelector("body").style.color = "white";
+	d.querySelector("body").style.margin = "0 auto";
+	d.querySelector("body").style.marginTop = "50px";
+	d.querySelector("body").style.textAlign = "center";
+
+
+	d.write("<img class='prof-pic' src='images/prof.jpg'>");
+	d.querySelector(".prof-pic").style.borderRadius = "50%";
+	d.querySelector(".prof-pic").style.width = "200px";
+	d.querySelector(".prof-pic").style.height = "200px";
+	d.querySelector(".prof-pic").style.cursor = "pointer";
+
+	d.write("<h1>Madhav Paudel</h1>");
+	d.write("<h5>I am a student of B. Sc. CSIT at Swastik college.</h5>");
+	d.write("<hr>");
+
+	d.write("<p title='Madhav Paudel'>My passion is to develop a web application. I want to explore my knowledge to all people.</p>");
+
+	d.write("<div class='social-icons'><a title='Facebook Link' href='http://www.facebook.com/poudelmadhav143' target='_blank'><i class='fa fa-facebook-official' aria-hidden='true'></i></a><a title='Twitter Link'  href='http://www.twitter.com/poudelmadhav143' target='_blank'><i class='fa fa-twitter-square' aria-hidden='true'></i></a><a title='Click to mail Madhav' href='mailto:poudelmadhav143@gmail.com' target='_blank'><i class='fa fa-envelope' aria-hidden='true'></i></a></div>");
+	d.querySelector(".social-icons").style.fontSize = "40px";
+	let social_links = d.querySelectorAll(".social-icons a");
+	for( let i = 0; i < social_links.length; i++) {
+		social_links[i].style.color = "white";
+		social_links[i].style.padding = "10px";
+	}
+</script>
+</body>
+</html>
