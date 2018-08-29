@@ -13,14 +13,15 @@
 		d.querySelector("html").style.background = "url('images/background.jpg') no-repeat center center fixed";
 		d.querySelector("html").style.backgroundSize = "cover";
 
-		d.querySelector("body").style.background = "rgba(0,0,0,0.4)";
-		d.querySelector("body").style.maxWidth = "400px";
-		d.querySelector("body").style.maxHeight = "440px";
-		d.querySelector("body").style.padding = "40px";
-		d.querySelector("body").style.color = "white";
-		d.querySelector("body").style.margin = "0 auto";
-		d.querySelector("body").style.marginTop = "50px";
-		d.querySelector("body").style.textAlign = "center";
+		let body = d.querySelector("body");
+		body.style.background = "rgba(0,0,0,0.4)";
+		body.style.maxWidth = "400px";
+		body.style.maxHeight = "440px";
+		body.style.padding = "40px";
+		body.style.color = "white";
+		body.style.margin = "0 auto";
+		body.style.marginTop = "50px";
+		body.style.textAlign = "center";
 
 
 		d.write("<img class='prof-pic' src='images/prof.jpg'>");
