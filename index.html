@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 	<title>Madhav Paudel</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="icon" type="image/jpeg" href="images/prof.jpg" />
 </head>
@@ -10,34 +9,14 @@
 	<script>
 		let d = document;
 
-		d.querySelector("html").style.background = 'url("images/background.jpg") no-repeat center center fixed';
-		d.querySelector("html").style.backgroundSize = "cover";
+		let prof_picture = ('<img class="prof-pic" src="images/prof.jpg">');
 
-		let body = d.querySelector("body");
-		body.style.background = "rgba(0,0,0,0.4)";
-		body.style.maxWidth = "400px";
-		body.style.maxHeight = "440px";
-		body.style.padding = "40px";
-		body.style.color = "white";
-		body.style.margin = "0 auto";
-		body.style.marginTop = "50px";
-		body.style.textAlign = "center";
+		let owner_info = "<h1>Madhav Paudel</h1>" +
+						 "<h5>I am a student of B. Sc. CSIT at Swastik college.</h5>" +
+						 "<hr>" +
+						 '<p title="Madhav Paudel">My passion is to develop a web application. I want to explore my knowledge to all people.</p>';
 
-		d.write('<img class="prof-pic" src="images/prof.jpg">');
-
-		let prof_pic = d.querySelector(".prof-pic");
-		prof_pic.style.borderRadius = "50%";
-		prof_pic.style.width = "200px";
-		prof_pic.style.height = "200px";
-		prof_pic.style.cursor = "pointer";
-
-		d.write("<h1>Madhav Paudel</h1>");
-		d.write("<h5>I am a student of B. Sc. CSIT at Swastik college.</h5>");
-		d.write("<hr>");
-
-		d.write('<p title="Madhav Paudel">My passion is to develop a web application. I want to explore my knowledge to all people.</p>');
-
-		d.write('<div class="social-icons">' +
+		let social_icons = '<div class="social-icons">' +
 					'<a title="Facebook Link" href="http://www.facebook.com/poudelmadhav143" target="_blank">' +
 						'<i class="fa fa-facebook-official" aria-hidden="true"></i>' +
 					'</a>' +
@@ -47,8 +26,33 @@
 					'<a title="Click to mail Madhav" href="mailto:poudelmadhav143@gmail.com" target="_blank">' +
 						'<i class="fa fa-envelope" aria-hidden="true"></i>' +
 					'</a>' +
-				'</div>');
+				'</div>';
+
+		let content = '<div class="main">' + prof_picture + owner_info + social_icons + '</div';
+
+		d.write(content);
+
+		d.querySelector("body").style.background = 'url("images/background.jpg") no-repeat center center fixed';
+		d.querySelector("body").style.backgroundSize = "cover";
+
+		let main = d.querySelector(".main");
+		main.style.background = "rgba(0,0,0,0.4)";
+		main.style.maxWidth = "400px";
+		main.style.maxHeight = "440px";
+		main.style.padding = "40px";
+		main.style.color = "white";
+		main.style.margin = "0 auto";
+		main.style.marginTop = "50px";
+		main.style.textAlign = "center";
+				
+		let prof_pic = d.querySelector(".prof-pic");
+		prof_pic.style.borderRadius = "50%";
+		prof_pic.style.width = "200px";
+		prof_pic.style.height = "200px";
+		prof_pic.style.cursor = "pointer";
+
 		d.querySelector(".social-icons").style.fontSize = "40px";
+
 		let social_links = d.querySelectorAll(".social-icons a");
 		for( let i = 0; i < social_links.length; i++) {
 			social_links[i].style.color = "white";
