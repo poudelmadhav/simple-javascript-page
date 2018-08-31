@@ -10,7 +10,7 @@
 	<script>
 		let d = document;
 
-		d.querySelector("html").style.background = "url('images/background.jpg') no-repeat center center fixed";
+		d.querySelector("html").style.background = 'url("images/background.jpg") no-repeat center center fixed';
 		d.querySelector("html").style.backgroundSize = "cover";
 
 		let body = d.querySelector("body");
@@ -23,20 +23,21 @@
 		body.style.marginTop = "50px";
 		body.style.textAlign = "center";
 
+		d.write('<img class="prof-pic" src="images/prof.jpg">');
 
-		d.write("<img class='prof-pic' src='images/prof.jpg'>");
-		d.querySelector(".prof-pic").style.borderRadius = "50%";
-		d.querySelector(".prof-pic").style.width = "200px";
-		d.querySelector(".prof-pic").style.height = "200px";
-		d.querySelector(".prof-pic").style.cursor = "pointer";
+		let prof_pic = d.querySelector(".prof-pic");
+		prof_pic.style.borderRadius = "50%";
+		prof_pic.style.width = "200px";
+		prof_pic.style.height = "200px";
+		prof_pic.style.cursor = "pointer";
 
 		d.write("<h1>Madhav Paudel</h1>");
 		d.write("<h5>I am a student of B. Sc. CSIT at Swastik college.</h5>");
 		d.write("<hr>");
 
-		d.write("<p title='Madhav Paudel'>My passion is to develop a web application. I want to explore my knowledge to all people.</p>");
+		d.write('<p title="Madhav Paudel">My passion is to develop a web application. I want to explore my knowledge to all people.</p>');
 
-		d.write("<div class='social-icons'><a title='Facebook Link' href='http://www.facebook.com/poudelmadhav143' target='_blank'><i class='fa fa-facebook-official' aria-hidden='true'></i></a><a title='Twitter Link'  href='http://www.twitter.com/poudelmadhav143' target='_blank'><i class='fa fa-twitter-square' aria-hidden='true'></i></a><a title='Click to mail Madhav' href='mailto:poudelmadhav143@gmail.com' target='_blank'><i class='fa fa-envelope' aria-hidden='true'></i></a></div>");
+		d.write('<div class="social-icons"><a title="Facebook Link" href="http://www.facebook.com/poudelmadhav143" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a><a title="Twitter Link"  href="http://www.twitter.com/poudelmadhav143" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a><a title="Click to mail Madhav" href="mailto:poudelmadhav143@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></div>');
 		d.querySelector(".social-icons").style.fontSize = "40px";
 		let social_links = d.querySelectorAll(".social-icons a");
 		for( let i = 0; i < social_links.length; i++) {
