@@ -37,7 +37,17 @@
 
 		d.write('<p title="Madhav Paudel">My passion is to develop a web application. I want to explore my knowledge to all people.</p>');
 
-		d.write('<div class="social-icons"><a title="Facebook Link" href="http://www.facebook.com/poudelmadhav143" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a><a title="Twitter Link"  href="http://www.twitter.com/poudelmadhav143" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a><a title="Click to mail Madhav" href="mailto:poudelmadhav143@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></div>');
+		d.write('<div class="social-icons">' +
+					'<a title="Facebook Link" href="http://www.facebook.com/poudelmadhav143" target="_blank">' +
+						'<i class="fa fa-facebook-official" aria-hidden="true"></i>' +
+					'</a>' +
+					'<a title="Twitter Link"  href="http://www.twitter.com/poudelmadhav143" target="_blank">' +
+						'<i class="fa fa-twitter-square" aria-hidden="true"></i>' +
+					'</a>' +
+					'<a title="Click to mail Madhav" href="mailto:poudelmadhav143@gmail.com" target="_blank">' +
+						'<i class="fa fa-envelope" aria-hidden="true"></i>' +
+					'</a>' +
+				'</div>');
 		d.querySelector(".social-icons").style.fontSize = "40px";
 		let social_links = d.querySelectorAll(".social-icons a");
 		for( let i = 0; i < social_links.length; i++) {
