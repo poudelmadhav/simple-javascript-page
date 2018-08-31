@@ -7,6 +7,7 @@
 </head>
 <body>
 	<script>
+		// variable declaration starts
 		let d = document;
 
 		let prof_picture = ('<img class="prof-pic" src="images/prof.jpg">');
@@ -29,9 +30,13 @@
 				'</div>';
 
 		let content = '<div class="main">' + prof_picture + owner_info + social_icons + '</div';
+		// variable declaration ends
 
+		// wring in the page starts
 		d.write(content);
+		// writing in the page ends
 
+		// styling using javascript starts
 		d.querySelector("body").style.background = 'url("images/background.jpg") no-repeat center center fixed';
 		d.querySelector("body").style.backgroundSize = "cover";
 
@@ -58,6 +63,7 @@
 			social_links[i].style.color = "white";
 			social_links[i].style.padding = "10px";
 		}
+		// styling using javascript ends
 	</script>
 </body>
 </html>
